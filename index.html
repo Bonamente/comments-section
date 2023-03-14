@@ -17,57 +17,25 @@
         <div class="form-row">
           <label class="visually-hidden" for="name">Введите имя</label>
           <input id="name" class="name-input" type="text" name="name" placeholder="Ваше имя" />
-
-          <p id="name-error" class="visually-hidden">Обязательное поле</p>
+          <p id="name-error" class="name-error"></p>
         </div>
 
         <div class="form-row">
-          <label class="visually-hidden" for="comment">Добавьте комментарий...</label>
+          <label class="visually-hidden" for="comment">Добавьте комментарий</label>
           <textarea id="comment" class="comment-input" name="comment" placeholder="Ваш комментарий..."></textarea>
-
-          <p id="comment-error" class="visually-hidden">Обязательное поле</p>
+          <p id="comment-error" class="comment-error"></p>
         </div>
 
         <div class="form-bottom-row">
           <div class="form-inner-wrapper">
             <label class="visually-hidden" for="date">Укажите дату комментария</label>
             <input id="date" class="date-input" type="date" name="date"  />
-          </div>     
-
+          </div>
           <button id="submit" class="btn submit-btn" type="submit">Добавить</button>       
         </div>        
       </form>
 
-      <ul id="comments" class="comments-list">
-        <li class="comment-item">
-          <article>
-            <p class="comment-text">           
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nobis ad voluptatem, beatae tenetur iure exercitationem culpa aliquam tempore corrupti aliquid esse non unde ea numquam illum facilis, dignissimos doloribus?
-            </p>
-            <div class="comment-bottom">
-              <div class="comment-info">              
-                <span class="comment-author">
-                  <span class="visually-hidden">Автор комментария:</span>                 
-                  Random user
-                </span>
-                <span class="comment-date">
-                  <span class="visually-hidden">Комментарий создан:</span>                  
-                  сегодня, 16:23
-                </span>
-              </div>
-
-              <div class="comment-actions">
-                <button class="btn like-btn">
-                  <span class="visually-hidden">Лайкнуть комментарий</span>
-                </button>
-                <button class="btn delete-btn">
-                  <span class="visually-hidden">Удалить комментарий</span>
-                </button>
-              </div>
-            </div>
-          </article>
-        </li>        
-      </ul>
+      <ul id="comments" class="comments-list"></ul>
     </section>    
   </main>
   
