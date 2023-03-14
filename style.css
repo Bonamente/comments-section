@@ -124,6 +124,7 @@ img {
 .name-input,
 .comment-input,
 .date-input {
+  position: relative;
   width: 100%;  
 }
 
@@ -140,6 +141,14 @@ img {
 
 .date-input { 
   height: 42px;  
+}
+
+.name-error,
+.comment-error {
+  position: absolute;
+
+  font-weight: 700;
+  color: #BD2031;
 }
 
 .btn {
@@ -182,6 +191,7 @@ img {
   margin-bottom: 15px;    
   padding: 15px;
 
+  background-color: #f5f5f5;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     
   border-radius: 5px;
@@ -238,18 +248,18 @@ img {
 }
 
 .like-btn {
-  background-image: url('/assets/img/heart-icon.svg');
+  background-image: url('assets/img/heart-icon.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .like-btn.liked {
-  background-image: url('/assets/img/heart-colored-icon.svg');
+  background-image: url('assets/img/heart-colored-icon.svg');
 }
 
 .delete-btn {
-  background-image: url('/assets/img/bin-icon.svg');
+  background-image: url('assets/img/bin-icon.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
