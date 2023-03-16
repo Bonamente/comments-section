@@ -44,6 +44,10 @@ body {
   height: 100%;
 }
 
+body {
+  min-width: 320px;
+}
+
 *,
 *::after,
 *::before {
@@ -90,6 +94,14 @@ img {
   max-width: 500px;
   margin: 0 auto;  
   padding: 50px 20px 50px;
+}
+
+@media (max-width: 767px) {
+  .comments-section {
+    width: 90%;
+    min-width: unset;
+    max-width: unset;
+  }
 }
 
 .title {
@@ -149,6 +161,13 @@ img {
 
   font-weight: 700;
   color: #BD2031;
+}
+
+@media (max-width: 767px) {
+  .name-error,
+  .comment-error {
+    font-size: 14px;
+  }
 }
 
 .btn {
